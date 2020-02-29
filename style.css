@@ -1,0 +1,93 @@
+:root {
+    --main-color: #24BBC4;
+    --main-color-fade: rgba(36, 188, 196, 0.7);
+    --secondary-color: #FE8F2D;
+    --secondary-color-faded: rgba(254, 142, 45, 0.673);
+    --grey: rgba(128, 128, 128, 0.925);
+    --faded-grey: rgb(203, 199, 199);
+}
+*{
+    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+input:focus, select:focus, textarea:focus, button:focus{
+    outline: none;
+}
+
+#main-container{
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#header-img-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-bottom: 50px;
+}
+#header-img{
+    height: 100%;
+    width: 200px;
+    margin: auto;
+}
+.sign{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.sign > .credentials > input{
+    margin: 5px;
+    height: 20px;
+    width: 200px;
+    border: none;
+    padding: 0px 5px;
+}
+.light-grey{
+    color: var(--secondary-color-faded);
+}
+.credentials{
+    border-bottom: 1.5px solid var(--faded-grey);
+    margin: 10px 0px;
+    width: 260px;
+}
+.credentials-highlight{
+    border-bottom: 1.5px solid var(--main-color);
+}
+#forgot-pw{
+    width: 260px;
+    text-align: right;
+    margin: 5px 0px;
+    color: var(--grey);
+    text-decoration: none;
+    font-size: 0.8em;
+}
+#rem-me{
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    width: 100%;
+    color: grey;
+    font-size: 0.8rem;
+    align-items: center;
+    margin-top: 20px;
+}
+.sign-btn{
+    margin: 15px 0px;
+    width: 90%;
+    height: 30px;
+    background-color: var(--main-color);
+    border: none;
+    border-radius: 5px;
+    color: white;
+}
+#to-sign-up{
+    margin-top: 10px;
+    font-size: 0.7rem;
+    text-align: center;
+    color: grey;
+}
+.normal-link{
+    color: grey;
+}
