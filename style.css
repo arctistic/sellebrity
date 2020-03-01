@@ -117,6 +117,24 @@ input:focus, select:focus, textarea:focus, button:focus{
 
 
 
+/* NAV BAR */
+nav{
+    /* border: 2px solid red; */
+    box-sizing: border-box;
+    position: fixed;
+    top: 0px;
+    padding: 20px 0px;
+    background-color: rgb(231, 108, 6);
+    height: 60px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    z-index: 5;
+    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.489);
+}
+
+
 
 
 
@@ -153,10 +171,15 @@ input:focus, select:focus, textarea:focus, button:focus{
     margin-left: 10px;
     box-shadow: 0px 0px 9px 5px rgba(0, 0, 0, 0.428) inset;
 }
+
+
+/* POST */
+
 .post-container{
     display: flex;
     flex-direction: column;
     align-items: flex-end;
+    box-shadow: 0px 0px 40px -20px black;
 }
 .post-outer{
     position: relative;
@@ -315,3 +338,9 @@ input:focus, select:focus, textarea:focus, button:focus{
     left: -40px;
     box-shadow: -4px -1px 13px -2px black;
 }
+
+
+
+
+/* SOLO PRODUCT PAGE */
+
