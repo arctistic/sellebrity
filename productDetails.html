@@ -8,17 +8,60 @@
     <link href="https://fonts.googleapis.com/css?family=Pacifico&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/fa8dfb2200.js" crossorigin="anonymous"></script>
 </head>
-<body>
+<body id="product-detail-body">
     <nav>
         <button style="height: 30px;">
             <img style="height: 30px;" src="images/logo.png" alt="">
         </button>
         <form style="width: 200px;" id="search-bar" action="">
-            <input type="text" style="height: 20px; border:none; margin: 0px;border-bottom-left-radius: 5px; border-top-left-radius: 5px; background-color:rgb(224, 224, 224);">
+            <input type="text" style="height: 20px; border:none; margin: 0px;border-bottom-left-radius: 5px; border-top-left-radius: 5px; background-color:rgb(224, 224, 224); box-sizing: border-box;
+            padding-left: 5px;">
             <button style="background: rgb(224, 224, 224);; height: 20px;; margin-left: -5px;padding-right: 5px; font-size: 0.8rem; border-bottom-right-radius: 5px; border-top-right-radius: 5px; color: rgba(0, 0, 0, 0.646)" type="submit">
                 <i class="fas fa-search"></i>
             </button>
         </form>
     </nav>
+    <div style="height: 60px;"></div>
+
+    <div class="product-container">
+        <div class="product-photos-container">
+            <div class="product-photo"
+            style="background-image: url('product-image/1.jpg');">
+                <div>
+                    <i id="leftA" class="fas fa-chevron-left"></i>
+                </div>
+                <div>
+                    <i id="rightA" class="fas fa-chevron-right"></i>
+                </div>
+                
+            </div>
+        </div>
+
+        <div class="product-content-details">
+            <img src="images/user-photo.jpg" alt="">
+            <span class="product-content-desc"> 
+                <span class="product-content-username">arctistic</span><br>
+                Desc description Desc description Desc description Desc description </span>
+            <span></span>
+        </div>
+        <div class="product-content-price-buy">
+            <span class="product-content-price">
+                <button>₹199</button>
+            </span>
+            <span class="product-content-buy">
+                <button>
+                    Buy <i class="fas fa-shopping-cart"></i>
+                </button>
+            </span>
+        </div>
+        <div class="product-review">
+            <p class="review-text">Reviews</p>
+            <div class="each-review">
+                <img src="images/user-photo.jpg" alt=""> Reviewkf askjfka jakjas asjdaskdnasd akjsknbasd !
+            </div>
+        </div>
+
+
+    <script src="script.js"></script>
 </body>
 </html>
