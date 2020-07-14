@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/fa8dfb2200.js" crossorigin="anonymous"></script>
+    <title>Upload</title>
+</head>
+
+<body id="sign-up-pg">
+    <div id="main-container">
+        <nav>
+            <button style="height: 30px;">
+                <img style="height: 30px;" src="images/logo.png" alt="">
+            </button>
+            <form style="width: 200px;" id="search-bar" action="">
+                <input type="text" style="height: 20px; border:none; margin: 0px;border-bottom-left-radius: 5px; border-top-left-radius: 5px; background-color:rgb(224, 224, 224); box-sizing: border-box;
+                padding-left: 5px;">
+                <button style="background: rgb(224, 224, 224);; height: 20px;; margin-left: -5px;padding-right: 5px; font-size: 0.8rem; border-bottom-right-radius: 5px; border-top-right-radius: 5px; color: rgba(0, 0, 0, 0.646)" type="submit">
+                    <i class="fas fa-search"></i>
+                </button>
+            </form>
+        </nav>
+        <div style="height: 60px;"></div>
+        <div id="content-upload">
+            <form class="sign" action="">
+                <span class="credentials">
+                    <input name="name" type="text" placeholder="Name" required>
+                </span>
+                <span class="credentials-desc">
+                    <textarea name="desc" id="" cols="30" rows="10" placeholder="Description"></textarea>
+                    <i class="fas fa-file-signature light-grey"></i>
+                </span>
+                <span class="credentials">
+                    <input name="name" type="file" placeholder="Name" required>
+                </span>
+                <button class="sign-btn" type="submit">Upload</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

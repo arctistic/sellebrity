@@ -1,8 +1,8 @@
 :root {
-    --main-color: #24BBC4;
+    --main-color: #429bf3;
     --main-color-fade: rgba(36, 188, 196, 0.7);
-    --secondary-color: rgb(231, 108, 6);
-    --secondary-color-faded: rgba(254, 142, 45, 0.673);
+    --secondary-color: rgb(236, 147, 74);
+    --secondary-color-faded: rgba(241, 154, 78, 0.673);
     --grey: rgba(128, 128, 128, 0.925);
     --faded-grey: rgb(203, 199, 199);
     --faded-white:rgba(255, 255, 255, 0.619);
@@ -13,6 +13,8 @@
 } */
 body{
     background-color: #F8F8F8;
+    width: 100vw;
+
 }
 #login-pg, #sign-up-pg{
     background-image: none;
@@ -22,6 +24,7 @@ body{
     margin: 0px;
     padding: 0px;
     font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+    /* border: 2px solid black; */
 }
 a{ color: inherit; } 
 button{
@@ -30,7 +33,7 @@ button{
 }
 
 
-/* SIGN IN AND SIGN UP */
+/* ****************SIGN IN AND SIGN UP****************** */
 input:focus, select:focus, textarea:focus, button:focus{
     outline: none;
 }
@@ -46,7 +49,7 @@ input:focus, select:focus, textarea:focus, button:focus{
     display: flex;
     justify-content: center;
     align-content: center;
-    margin-bottom: 50px;
+    margin: 20px 0px;
 }
 #header-img{
     height: 100%;
@@ -123,7 +126,12 @@ input:focus, select:focus, textarea:focus, button:focus{
 
 
 
-/* NAV BAR */
+
+
+
+
+
+/* ************* NAV BAR *************** */
 nav{
     /* border: 2px solid red; */
     box-sizing: border-box;
@@ -133,7 +141,7 @@ nav{
     /* background-color: rgb(231, 108, 6); */
     background-color: white;
     height: 60px;
-    width: 100%;
+    width: 100vw;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -146,7 +154,10 @@ nav{
 
 
 
-/* TRENDING PAGE */
+
+
+
+/* *************** TRENDING (HOME) PAGE *************** */
 #header-block{
     height: 15vh;
     background-color: var(--secondary-color);
@@ -167,6 +178,7 @@ nav{
     bottom: -30px;
     height: 100px;
     width: 100vw;
+    /* overflow: hidden; */
     overflow: scroll;
     display: flex;
 }
@@ -180,7 +192,7 @@ nav{
 }
 
 
-/* POST */
+/* *************** POST *************** */
 
 .post-container{
     display: flex;
@@ -286,15 +298,18 @@ nav{
     background-color: white;
     box-sizing: border-box;
     height: 50px;
-    width: 100%;
+    width: 101vw;
     position: fixed;
     bottom: -7px;
+    left: 0px;
     border: 5px solid white;
     border-top: none;
     display: flex;
     align-items: center;
     justify-content: space-around;
-    box-shadow: 0px 0px 20px 0px black;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.177);
+    box-sizing: border-box;
+
 }
 #foot-panel i{
     font-size: 1.2rem;
@@ -310,7 +325,10 @@ nav{
 
 
 
-/* STATUS */
+
+
+
+/* ************ STATUS **************** */
 .status-container{
     display: flex;
     flex-direction: row;
@@ -348,7 +366,17 @@ nav{
 
 
 
-/* SOLO PRODUCT PAGE */
+
+
+
+
+
+
+
+
+
+
+/* ************ SOLO PRODUCT and POST PAGE ************ */
 
 .product-container{
     width: 90vw;
@@ -427,10 +455,32 @@ nav{
     border-radius: 50%;
     margin-right: 10px;
 }
+/* sdfsdf*/
+.post-comment{
+    box-sizing: border-box;
+    padding: 10px 10px;
+}
+.comment-text{
+    padding: 5px 10px;
+}
+.each-comment{
+    display: flex;
+    align-items: center;
+    /* border: 2px solid red; */
+    padding: 20px 10px;
+}
+.each-comment > img{
+    width: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
 
 
 
-/* PROFILE */
+
+
+
+/* *************** PROFILE *************** */
 #profile-head-1{
     /* border: 2px solid red; */
     display: flex;
@@ -497,3 +547,19 @@ nav{
     height: 100%;
 
 }
+
+
+/* **** UPLOAD PAGE (THINGS ADDED TO SIGN IN PAGE) */
+#content-upload{
+    margin-top: 50px;
+}
+.credentials-desc{
+    width: 100%;
+    background-color: white;
+    border-bottom: 1.5px solid var(--faded-grey);
+    border-radius: 5px;
+}
+.credentials-desc > textarea{
+    border: none;
+    padding: 10px;
+} 

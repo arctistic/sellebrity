@@ -3,31 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Home</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Pacifico&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/fa8dfb2200.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <div style="height: 60px;"></div>
     <nav>
         <button style="height: 30px;">
             <img style="height: 30px;" src="images/logo.png" alt="">
         </button>
-        <form style="width: 100%; 
-            display: flex; 
-            justify-content: flex-end;" id="search-bar" action="">
-            <input type="text" style="
-                height: 20px; 
-                border:none;
-                border-bottom-left-radius: 5px; border-top-left-radius: 5px;
-                background-color:rgb(224, 224, 224); padding-right: 20px;">
-
+        <form style="width: 200px;" id="search-bar" action="">
+            <input type="text" style="height: 20px; border:none; margin: 0px;border-bottom-left-radius: 5px; border-top-left-radius: 5px; background-color:rgb(224, 224, 224); box-sizing: border-box;
+            padding-left: 5px;">
             <button style="background: rgb(224, 224, 224);; height: 20px;; margin-left: -5px;padding-right: 5px; font-size: 0.8rem; border-bottom-right-radius: 5px; border-top-right-radius: 5px; color: rgba(0, 0, 0, 0.646)" type="submit">
                 <i class="fas fa-search"></i>
             </button>
         </form>
     </nav>
+    <div style="height: 60px;"></div>
 
     <div id="header-block">
         <div id="items-scroll-sideways">
@@ -106,61 +100,61 @@
     </div>
 
         <!-- POSTS -->
-        <div class="post-container">
-            <div class="post-outer">
-                <div class="post-head">
-                    <div class="post-user-img-container">
-                        <img class="post-user-img" src="images/user-photo.jpg" alt="">
-                    </div>
-                    <div class="post-username-container">
-                        <p class="post-username">arctistic</p>
-                    </div>
+    <div class="post-container">
+        <div class="post-outer">
+            <div class="post-head">
+                <div class="post-user-img-container">
+                    <img class="post-user-img" src="images/user-photo.jpg" alt="">
                 </div>
-                <div class="post-attachment" style="background-image: url('product-image/2.jpg');">
-                    <div class="post-attachment-photo-container">
-                        <div class="post-product-name">
-                            Dream Catcher
-                        </div>
-                        <div class="post-product-price">
-                            ₹199
-                        </div>
-                    </div>
+                <div class="post-username-container">
+                    <p class="post-username">arctistic</p>
                 </div>
             </div>
-            <div class="post-caption">
-                skfbaksjblakjsfblkjabs
-            </div>
-            <div class="post-foot">
-                <div class="post-like">
-                    <button>
-                        <i class="far fa-thumbs-up"></i>
-                    </button>
-                    <span class="cout-l-c">122</span>
-                </div>
-                <div class="post-comment">
-                    <button>
-                        <i class="far fa-comment"></i>
-                    </button>
-                    <span class="cout-l-c">34</span>
-                </div>
-                <div class="post-direct-to-content">
-                    <button><i class="fas fa-expand"></i></button>
+            <div class="post-attachment" style="background-image: url('product-image/2.jpg');">
+                <div class="post-attachment-photo-container">
+                    <div class="post-product-name">
+                        Dream Catcher
+                    </div>
+                    <div class="post-product-price">
+                        ₹199
+                    </div>
                 </div>
             </div>
         </div>
-    
-        <!-- STATUS -->
-        <div class="status-container">
-            <div class="status-content">
-                <p class="status-username">arctistic</p>
-                <p class="status-text">
-                    GitHub Wikis is a simple way to let others contribute content. Any GitHub user can create and edit pages to use for documentation, examples, support, or anything you wish. 
-                </p>
+        <div class="post-caption">
+            skfbaksjblakjsfblkjabs
+        </div>
+        <div class="post-foot">
+            <div class="post-like">
+                <button>
+                    <i class="far fa-thumbs-up"></i>
+                </button>
+                <span class="cout-l-c">122</span>
             </div>
-            <div class="status-photo-container">
-                <img class="status-user-photo" src="images/user-photo.jpg" alt="">
+            <div class="post-comment">
+                <button>
+                    <i class="far fa-comment"></i>
+                </button>
+                <span class="cout-l-c">34</span>
+            </div>
+            <div class="post-direct-to-content">
+                <button><i class="fas fa-expand"></i></button>
             </div>
         </div>
+    </div>
+
+    <!-- STATUS -->
+    <div class="status-container">
+        <div class="status-content">
+            <p class="status-username">arctistic</p>
+            <p class="status-text">
+                GitHub Wikis is a simple way to let others contribute content. Any GitHub user can create and edit pages to use for documentation, examples, support, or anything you wish. 
+            </p>
+        </div>
+        <div class="status-photo-container">
+            <img class="status-user-photo" src="images/user-photo.jpg" alt="">
+        </div>
+    </div>
     
     
 
