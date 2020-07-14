@@ -26,7 +26,7 @@ body{
     font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
     /* border: 2px solid black; */
 }
-a{ color: inherit; } 
+a{ color: inherit; text-decoration: none; } 
 button{
     border: none;
     background-color: transparent;
@@ -146,7 +146,7 @@ nav{
     align-items: center;
     justify-content: space-around;
     z-index: 5;
-    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.489);
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.177);
 }
 
 
@@ -563,3 +563,54 @@ nav{
     border: none;
     padding: 10px;
 } 
+
+/* DROP DOWN */
+.dropdown{
+    backdrop-filter: blur(2px);
+    height: 0vh;
+    min-width: 100vw;
+    position: fixed;
+    left: 0px;
+    top: 60px;
+    overflow: hidden;
+    transition: 0.2s ease-in-out all;
+}
+.toggle-display{
+    transition: 0.3=4s ease-in-out all;
+    height: 100vh;
+}
+.dropdown > ul > li{
+    color: white;
+    margin: 10px;
+    background-color: var(--main-color);
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 10px;
+    border-radius: 20px;
+}
+
+
+
+
+
+/* NOTIFICATION */
+.notification-item{
+    box-sizing: border-box;
+    height: 70px;
+    border-bottom: 1px;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    border-color: lightgrey;
+    border-style: solid;
+    display: flex;
+    padding: 10px 20px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: grey;
+    background-color: white;
+}
+.notification-unseen{
+    color: black;
+}
